@@ -1,0 +1,15 @@
+,Correlation with is_canceled
+lead_time,0.2931233557607184
+total_of_special_requests,-0.2346577739690245
+required_car_parking_spaces,-0.19549781749449852
+booking_changes,-0.14438099106132654
+previous_cancellations,0.11013280822284209
+is_repeated_guest,-0.0847934183570901
+adults,0.06001721283955583
+previous_bookings_not_canceled,-0.05735772316594581
+days_in_waiting_list,0.054185824117780675
+adr,0.047556597880389954
+babies,-0.03249108920833294
+stays_in_week_nights,0.024764629045870488
+children,0.005047790029269158
+stays_in_weekend_nights,-0.0017910780782637893

@@ -1,0 +1,3 @@
+Partition,Rows,Percentage of Full Dataset,Booking Start Date,Booking End Date,Cancellation Percentage
+Training,95401,79.90702738922857,2013-06-24,2017-01-11,38.43041477552646
+Final Test,23989,20.09297261077142,2017-01-12,2017-08-31,31.518612697486347

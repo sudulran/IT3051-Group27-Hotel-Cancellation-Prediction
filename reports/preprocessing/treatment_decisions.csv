@@ -1,0 +1,11 @@
+Issue,Treatment,Reason
+Missing agent,Create has_agent and remove raw agent ID,Missing indicates no agent; raw ID is identifier-like
+Missing company,Create has_company and remove raw company ID,Missing indicates no company; raw ID is identifier-like
+Missing country,Encode missing values as Unknown,Avoid inventing a specific country
+Missing children,Most-frequent imputation using training data,Only a very small number are missing
+Exact duplicates,Keep,No unique booking ID proves they are erroneous
+Zero-guest bookings,Keep,Can represent legitimate special booking patterns
+Zero-night bookings,Keep,Can represent legitimate operational/day-use patterns
+Negative ADR,Keep,Unusual but not proven erroneous
+Very high ADR,Keep,Extreme but not proven erroneous
+Large-group bookings,Keep,Consistent with possible group reservations

@@ -1,0 +1,14 @@
+Feature,Unique Values
+company,353
+agent,334
+country,178
+arrival_date_month,12
+assigned_room_type,12
+reserved_room_type,10
+market_segment,8
+distribution_channel,5
+meal,5
+customer_type,4
+deposit_type,3
+hotel,2
+is_repeated_guest,2

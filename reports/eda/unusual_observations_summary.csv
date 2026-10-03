@@ -1,0 +1,7 @@
+Observation,Count
+Bookings with zero recorded guests,180
+Bookings with zero recorded nights,715
+Bookings with negative ADR,1
+Bookings with ADR = 0,1959
+Very high ADR values (>1000) for inspection,1
+Large-group bookings (>10 adults),12

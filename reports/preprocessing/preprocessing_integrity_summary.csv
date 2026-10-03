@@ -1,0 +1,10 @@
+Check,Value
+Raw rows,119390
+Raw columns,32
+Training rows,95401
+Final-test rows,23989
+Chronological cutoff date,2017-01-11
+Engineered predictors before encoding,32
+Processed features after encoding,251
+Training non-finite processed values,0
+Final-test non-finite processed values,0
