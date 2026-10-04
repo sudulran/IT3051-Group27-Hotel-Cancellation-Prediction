@@ -1,0 +1,10 @@
+{
+  "accuracy": 0.7458835299512276,
+  "precision_class_1": 0.5640129336712401,
+  "recall_class_1": 0.8535907948684036,
+  "f1_class_1": 0.6792254262260576,
+  "roc_auc": 0.8637320928487906,
+  "pr_auc_average_precision": 0.7547533104104271,
+  "probability_threshold": 0.33,
+  "rows": 23989
+}
