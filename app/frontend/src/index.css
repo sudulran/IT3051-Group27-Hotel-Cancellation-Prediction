@@ -6,7 +6,14 @@
 }
 
 @layer base {
-  body { @apply m-0 bg-slate-50 font-sans text-slate-800 antialiased; }
+  body {
+    @apply m-0 bg-slate-50 font-sans text-slate-800 antialiased;
+    background-image: linear-gradient(rgba(248, 250, 252, .68), rgba(248, 250, 252, .68)), url('/hotelBG.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
   button, input, select { font: inherit; }
   button { cursor: pointer; }
   button:disabled { cursor: wait; opacity: .65; }

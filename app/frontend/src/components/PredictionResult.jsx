@@ -24,6 +24,6 @@ export default function PredictionResult({ result, loading, onReset }) {
         <button type="button" onClick={onReset} disabled={loading} className="secondary-button mt-7 w-full"><RotateCcw size={16} aria-hidden="true" />Clear / New Prediction</button>
       </div>
     </div>
-    <div className="mt-5 flex gap-3 rounded-xl border border-teal-100 bg-teal-50/70 p-5"><ShieldCheck size={20} className="mt-0.5 shrink-0 text-teal-800" aria-hidden="true" /><div><h3 className="text-sm font-semibold text-teal-950">Support for informed decisions</h3><p className="mt-2 text-xs leading-5 text-teal-900">This prediction is decision-support information and should not be treated as certainty or used as the sole basis for decisions about a guest.</p></div></div>
+    <div className="mt-5 flex gap-3 rounded-xl border border-teal-100 bg-teal-50/90 p-5"><ShieldCheck size={20} className="mt-0.5 shrink-0 text-teal-800" aria-hidden="true" /><div><h3 className="text-sm font-semibold text-teal-950">Support for informed decisions</h3><p className="mt-2 text-xs leading-5 text-teal-900">This prediction is decision-support information and should not be treated as certainty or used as the sole basis for decisions about a guest.</p></div></div>
   </aside>
 }
