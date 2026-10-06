@@ -11,7 +11,8 @@
     "build": "vite build",
     "lint": "eslint . --max-warnings 0",
     "preview": "vite preview --port 5173 --strictPort",
-    "test": "playwright test"
+    "test": "playwright test",
+    "test:integration": "playwright test --config playwright.integration.config.js"
   },
   "dependencies": {
     "i18n-iso-countries": "^7.14.0",

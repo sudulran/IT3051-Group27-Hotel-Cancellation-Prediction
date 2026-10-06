@@ -6,7 +6,9 @@ Application code is JavaScript. All HTTP requests live in
 
 ## Start locally
 
-Install Node.js 24 LTS (or a version supported by `package.json`) with npm.
+Install a supported Node.js LTS release normally (Node.js 24 LTS recommended)
+with npm. Verify `node --version` and `npm --version` on PATH in a new terminal.
+No temporary runtime path is required by the project.
 Use two terminals, starting from the repository root.
 
 Backend (Windows PowerShell):
@@ -42,6 +44,7 @@ npm run lint
 npm run build
 npx playwright install chromium
 npm test
+npm run test:integration
 ```
 
 Browser tests start their own Vite server on port 5173, so stop the dev server
@@ -49,6 +52,14 @@ first. These UI tests use controlled API responses to check payloads, results,
 validation, loading, failure states and responsive layout. Normal application
 requests go to the real backend. Backend real-model integration tests remain
 under `app/backend/tests/`.
+
+The separate integration suite starts the real FastAPI backend on port 8000
+and Vite on 5173. Stop both local servers first. It checks the live request
+schema and scores synthetic bookings through the saved model at desktop and
+mobile widths, including missing values and unusual valid records. It uses
+the repository `.venv` when present, otherwise Python on PATH. Set
+`PYTHON_EXECUTABLE` if another compatible interpreter is needed. No model
+prediction is mocked in this suite.
 
 ## Interface and contract
 
