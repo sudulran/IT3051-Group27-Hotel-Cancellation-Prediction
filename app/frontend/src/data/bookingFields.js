@@ -31,8 +31,18 @@ export const sections = [
     yesNo('is_repeated_guest', 'Repeated Guest'),
   ] },
   { title: 'Booking Channel', description: 'How this reservation reached the hotel.', fields: [
-    select('market_segment', 'Market Segment', ['Aviation', 'Complementary', 'Corporate', 'Direct', 'Groups', 'Offline TA/TO', 'Online TA', 'Undefined']),
-    select('distribution_channel', 'Distribution Channel', ['Corporate', 'Direct', 'GDS', 'TA/TO', 'Undefined']),
+    { name: 'market_segment', label: 'Market Segment', type: 'select', options: [
+      ...options(['Aviation', 'Complementary', 'Corporate', 'Direct', 'Groups']),
+      { value: 'Offline TA/TO', label: 'Offline travel agent / tour operator (TA/TO)' },
+      { value: 'Online TA', label: 'Online travel agent (TA)' },
+      { value: 'Undefined', label: 'Undefined' },
+    ] },
+    { name: 'distribution_channel', label: 'Distribution Channel', type: 'select', options: [
+      ...options(['Corporate', 'Direct']),
+      { value: 'GDS', label: 'Global distribution system (GDS)' },
+      { value: 'TA/TO', label: 'Travel agent / tour operator (TA/TO)' },
+      { value: 'Undefined', label: 'Undefined' },
+    ] },
     yesNo('has_agent', 'Booking Through Agent?'),
     yesNo('has_company', 'Booking Through Company?'),
   ] },
