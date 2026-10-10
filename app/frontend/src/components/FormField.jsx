@@ -7,7 +7,7 @@ export default function FormField({ field, value, onChange, error, bookingDate }
     'aria-describedby': [hint && `${name}-hint`, error && `${name}-error`].filter(Boolean).join(' ') || undefined,
   }
   return <div className="min-w-0">
-    <label className="field-label" htmlFor={name}>{label}{optional && <> <span className="font-normal text-slate-500">(optional)</span></>}</label>
+    <label className="field-label" htmlFor={name}>{label}</label>
     {type === 'select'
       ? <select {...props}>{options.map((option) => <option key={option.value} value={option.value}>{option.label}</option>)}</select>
       : <input {...props} type={type} min={name === 'arrival_date' ? bookingDate : min} step={step} />}

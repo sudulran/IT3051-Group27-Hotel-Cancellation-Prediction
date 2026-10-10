@@ -18,7 +18,7 @@ export default function CountrySelect({ value, onChange, error }) {
         <input className="form-control" id="country-search" type="search" value={search} onChange={(event) => setSearch(event.target.value)} placeholder="Search by name or code" aria-controls="country" />
       </div>
       <div>
-        <label className="field-label" htmlFor="country">Country <span className="font-normal text-slate-500">(optional)</span></label>
+        <label className="field-label" htmlFor="country">Country</label>
         <select className={`form-control ${error ? 'input-error' : ''}`} id="country" name="country" value={value} onChange={(event) => onChange('country', event.target.value)} aria-invalid={!!error} aria-describedby={error ? 'country-error' : 'country-hint'}>
           <option value="">Unknown / not provided</option>
           {filtered.map((country) => <option key={country.value} value={country.value}>{country.label} ({country.value})</option>)}

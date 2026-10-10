@@ -25,7 +25,7 @@ for (const width of [1440, 390]) {
     await page.goto('/')
     await page.getByLabel('Booking Date', { exact: true }).fill('2016-12-20')
     await page.getByLabel('Arrival Date', { exact: true }).fill('2017-01-08')
-    await page.getByLabel('Children (optional)', { exact: true }).fill('')
+    await page.getByLabel('Children', { exact: true }).fill('')
     for (const values of [
       { adr: '100', adults: '2', nights: '3' },
       { adr: '-6.38', adults: '0', nights: '0' },

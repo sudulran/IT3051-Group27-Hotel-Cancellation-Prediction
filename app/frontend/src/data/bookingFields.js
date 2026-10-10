@@ -25,7 +25,7 @@ export const sections = [
   ] },
   { title: 'Guest Details', description: 'Guest counts and country of origin.', fields: [
     number('adults', 'Adults'),
-    number('children', 'Children', { optional: true, hint: 'Leave blank if unknown.' }),
+    number('children', 'Children', { optional: true }),
     number('babies', 'Babies'),
     { name: 'country', label: 'Country', type: 'country', optional: true },
     yesNo('is_repeated_guest', 'Repeated Guest'),

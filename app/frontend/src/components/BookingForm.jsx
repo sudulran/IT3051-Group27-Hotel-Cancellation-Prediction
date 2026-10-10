@@ -20,7 +20,7 @@ export default function BookingForm({ values, onChange, onSubmit, loading, error
     }
     onSubmit(bookingPayload(values))
   }
-  return <form id="booking-form" onSubmit={submit} aria-label="Booking information" aria-busy={loading}>
+  return <form id="booking-form" onSubmit={submit} aria-label="Booking information" aria-busy={loading} className="scroll-mt-24">
     <ErrorAlert error={error} />
     <fieldset disabled={loading} className="min-w-0 space-y-5">
       <legend className="sr-only">Reservation information</legend>
